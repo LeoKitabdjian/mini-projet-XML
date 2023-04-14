@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
 
+*
+  box-sizing: border-box
+
 body
   margin: 0
   display: flex
@@ -19,6 +22,7 @@ body
     position: relative
     border-radius: 1.5rem
     padding: 1rem
+    margin: 1rem
 
     section
       background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px)
@@ -49,6 +53,8 @@ body
           justify-content: space-between
           align-items: center
           user-select: none
+          word-break: break-all
+          gap: 1rem
 
           span:last-child
             font-weight: 500
