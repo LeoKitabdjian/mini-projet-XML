@@ -3,6 +3,20 @@
 * [Thomas Farineau](https://github.com/ThomasFarineau)
 * [Léo Kitabdjian](https://github.com/LeoKitabdjian)
 
+*Pour le transformer en PDF: https://md2pdf.netlify.app/*
+
+## Table des matières
+1. [Schéma XML](#schéma-xml)
+   * [Avantages de notre modélisation](#avantages-de-notre-modélisation)
+   * [Inconvénients de notre modélisation](#inconvénients-de-notre-modélisation)
+2. [Scénarios implémentés avec XSLT](#scénarios-implémentés-avec-xslt)
+   * [Scénario 1](#scénario-1)
+   * [Scénario 2](#scénario-2)
+   * [Scénario 3](#scénario-3)
+3. [Scénario avec une nouvelle structure XML](#scénario-avec-une-nouvelle-structure-xml)
+4. [Scénario avec une nouvelle structure JSON](#scénario-avec-une-nouvelle-structure-json)
+
+
 ## Schéma XML
 
 Le schéma XML est disponible dans le fichier [`/schema/schema.xsd`](/schema/schema.xsd).
@@ -61,6 +75,7 @@ Notre modélisation présente des avantages en termes de structuration et de val
 ### Scénario 3
 
 ## Scénario avec une nouvelle structure XML
+
 **Description** : Nous souhaitons extraire uniquement les informations sur les séjours linguistiques, les clients et les enseignants. Ce scénario permet de structurer les données différemment pour les intégrer dans un autre système (scolaire pour suivre notre idée).
 
 **Entrée** : [`/scenarios/new_structure/new_structure.xsl`](/scenarios/new_structure/new_structure.xsl)
