@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:fn="http://www.w3.org/2005/xpath-functions"
+                exclude-result-prefixes="xs"
+                version="3.0">
+
+    <xsl:output method="text"/>
+
+    <xsl:template match="/organisme">
+        <xsl:variable name="json-xml">
+            <map>
+                <map key="clients">
+                    <array>
+                        <xsl:apply-templates select="clients/client"/>
+                    </array>
+                </map>
+                <map key="accompagnateurs">
+                    <array>
+                        <xsl:apply-templates select="accompagnateurs/accompagnateur"/>
+                    </array>
+                </map>
+            </map>
+        </xsl:variable>
+        <xsl:value-of select="fn:serialize($json-xml, map { 'method': 'json', 'indent': true() })"/>
+    </xsl:template>
+
+    <xsl:template match="client">
+        <map>
+            <xsl:apply-templates select="@*"/>
+        </map>
+    </xsl:template>
+
+    <xsl:template match="accompagnateur">
+        <map>
+            <xsl:apply-templates select="@*"/>
+        </map>
+    </xsl:template>
+
+    <xsl:template match="@*">
+        <string key="{local-name()}">
+            <xsl:value-of select="."/>
+        </string>
+    </xsl:template>
+
+</xsl:stylesheet>

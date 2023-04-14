@@ -4,7 +4,7 @@
         <client id="1" nom="Dugue" prenom="Antony" email="antony.dugue@cl-mail.fr" telephone="0679408012" typePublic="adulte"/>
         <client id="2" nom="Hassan" prenom="Eric" email="eric.hassan@cl-mail.fr" telephone="0757814398" typePublic="famille"/>
         <client id="3" nom="Picot" prenom="Rayane" email="rayane.picot@cl-mail.fr" telephone="0767776394" typePublic="enfant_adolescent"/>
-        <client id="4" nom="Hassan" prenom="Matéo" email="matéo.hassan@cl-mail.fr" telephone="0684243176" typePublic="enfant_adolescent"/>
+        <client id="4" nom="Hassan" prenom="Matéo" email="mateo.hassan@cl-mail.fr" telephone="0684243176" typePublic="enfant_adolescent"/>
         <client id="5" nom="Coupet" prenom="Lila" email="lila.coupet@cl-mail.fr" telephone="0697496488" typePublic="famille"/>
     </clients>
     <accompagnateurs>
@@ -17,7 +17,7 @@
             <langue>allemand</langue>
             <langue>francais</langue>
         </enseignant>
-        <enseignant id="2" nom="Blondeau" prenom="Stéphane" email="stéphane.blondeau@en-mail.fr" telephone="0656863734">
+        <enseignant id="2" nom="Blondeau" prenom="Stéphane" email="stephane.blondeau@en-mail.fr" telephone="0656863734">
             <langue>francais</langue>
             <langue>italien</langue>
             <langue>espagnol</langue>

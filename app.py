@@ -2,6 +2,15 @@ import http.server
 import urllib.parse
 
 from scenarios import xslrenderer
+from data import generator
+
+
+def json(self):
+    self.send_response(200)
+    self.send_header("Content-type", "application/json")
+    self.end_headers()
+    self.wfile.write(generator.parseJson())
+
 
 def public(self):
     self.send_response(200)
@@ -33,6 +42,8 @@ def main(port=8000):
                 style(self, parsed_path)
             elif parsed_path.path == '/public':
                 public(self)
+            elif parsed_path.path == '/json':
+                json(self)
             else:
                 not_found(self)
 
@@ -43,5 +54,5 @@ def main(port=8000):
 
 
 if __name__ == '__main__':
-    xslrenderer.generate_all_html()
+    xslrenderer.generate()
     main(8000)

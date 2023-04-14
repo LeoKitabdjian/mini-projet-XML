@@ -1,0 +1,60 @@
+{
+    "accompagnateurs": [
+        {
+            "email": "antony.dugue@ac-mail.fr",
+            "id": 1,
+            "nom": "Dugue",
+            "prenom": "Antony",
+            "telephone": "0667769477"
+        },
+        {
+            "email": "jason.pourtier@ac-mail.fr",
+            "id": 2,
+            "nom": "Pourtier",
+            "prenom": "Jason",
+            "telephone": "0797995479"
+        }
+    ],
+    "clients": [
+        {
+            "email": "antony.dugue@cl-mail.fr",
+            "id": 1,
+            "nom": "Dugue",
+            "prenom": "Antony",
+            "telephone": "0679408012",
+            "typePublic": "adulte"
+        },
+        {
+            "email": "eric.hassan@cl-mail.fr",
+            "id": 2,
+            "nom": "Hassan",
+            "prenom": "Eric",
+            "telephone": "0757814398",
+            "typePublic": "famille"
+        },
+        {
+            "email": "rayane.picot@cl-mail.fr",
+            "id": 3,
+            "nom": "Picot",
+            "prenom": "Rayane",
+            "telephone": "0767776394",
+            "typePublic": "enfant_adolescent"
+        },
+        {
+            "email": "mateo.hassan@cl-mail.fr",
+            "id": 4,
+            "nom": "Hassan",
+            "prenom": "Mat\u00e9o",
+            "telephone": "0684243176",
+            "typePublic": "enfant_adolescent"
+        },
+        {
+            "email": "lila.coupet@cl-mail.fr",
+            "id": 5,
+            "nom": "Coupet",
+            "prenom": "Lila",
+            "telephone": "0697496488",
+            "typePublic": "famille"
+        }
+    ]
+}
