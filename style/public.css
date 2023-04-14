@@ -13,6 +13,7 @@ body {
   height: 100vh;
   background: black;
   font-family: "Roboto", sans-serif;
+  padding: 1rem;
 }
 body main {
   background-color: rgb(16, 16, 16);
@@ -22,7 +23,6 @@ body main {
   position: relative;
   border-radius: 1.5rem;
   padding: 1rem;
-  margin: 1rem;
 }
 body main section {
   background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
