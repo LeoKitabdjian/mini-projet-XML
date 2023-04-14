@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<organisme>
+    <clients>
+        <client id="1" nom="Dugue" prenom="Antony" email="antony.dugue@cl-mail.fr" telephone="0679408012" typePublic="adulte"/>
+        <client id="2" nom="Hassan" prenom="Eric" email="eric.hassan@cl-mail.fr" telephone="0757814398" typePublic="famille"/>
+        <client id="3" nom="Picot" prenom="Rayane" email="rayane.picot@cl-mail.fr" telephone="0767776394" typePublic="enfant_adolescent"/>
+        <client id="4" nom="Hassan" prenom="Matéo" email="matéo.hassan@cl-mail.fr" telephone="0684243176" typePublic="enfant_adolescent"/>
+        <client id="5" nom="Coupet" prenom="Lila" email="lila.coupet@cl-mail.fr" telephone="0697496488" typePublic="famille"/>
+    </clients>
+    <accompagnateurs>
+        <accompagnateur id="1" nom="Dugue" prenom="Antony" email="antony.dugue@ac-mail.fr" telephone="0667769477"/>
+        <accompagnateur id="2" nom="Pourtier" prenom="Jason" email="jason.pourtier@ac-mail.fr" telephone="0797995479"/>
+    </accompagnateurs>
+    <enseignants>
+        <enseignant id="1" nom="Decherf" prenom="Hadrien" email="hadrien.decherf@en-mail.fr" telephone="0731096709">
+            <langue>anglais</langue>
+            <langue>allemand</langue>
+            <langue>francais</langue>
+        </enseignant>
+        <enseignant id="2" nom="Blondeau" prenom="Stéphane" email="stéphane.blondeau@en-mail.fr" telephone="0656863734">
+            <langue>francais</langue>
+            <langue>italien</langue>
+            <langue>espagnol</langue>
+        </enseignant>
+    </enseignants>
+    <sejours>
+        <sejour id="1" typeSejour="stage_linguistique" destination="Angleterre" nbPlaces="8" dateDebut="2023-05-15" dateFin="2023-06-01" prix="500.0">
+            <typePublic>adulte</typePublic>
+            <typePublic>famille</typePublic>
+            <langue>anglais</langue>
+            <langue>francais</langue>
+            <accompagnateur id="1"/>
+            <enseignant id="1"/>
+            <activite description="Visite de la ville" typeActivite="CULTURE" prix="25.0"/>
+            <activite description="Visite du musée de Londre" typeActivite="CULTURE" prix="10.0"/>
+        </sejour>
+        <sejour id="2" typeSejour="immersion_en_famille" destination="Angleterre" nbPlaces="4" dateDebut="2023-08-25" dateFin="2023-12-20" prix="800.0">
+            <typePublic>enfant_adolescent</typePublic>
+            <langue>anglais</langue>
+            <cours nom="Cours d'anglais A2 - B1" niveau="INTERMEDIAIRE" langue="anglais" test="PAS DE TEST"/>
+            <cours nom="Cours d'anglais A1" niveau="DEBUTANT" langue="anglais" test="PAS DE TEST"/>
+            <cours nom="Cours d'espagnol B2 - C1" niveau="AVANCE" langue="anglais" test="PAS DE TEST"/>
+        </sejour>
+    </sejours>
+</organisme>
