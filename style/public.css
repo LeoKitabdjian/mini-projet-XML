@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  font-family: "Roboto", sans-serif;
+}
+body main {
+  background-color: rgb(16, 16, 16);
+  color: white;
+  max-width: 640px;
+  width: 100%;
+  position: relative;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+body main section {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-position: 50% 50%;
+  background-size: 1.1rem 1.1rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+body main section h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 2.5rem;
+  user-select: none;
+}
+body main section ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body main section ul li {
+  font-size: 1.5rem;
+  list-style: unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+body main section ul li span:last-child {
+  font-weight: 500;
+  background: #45ffbc;
+  color: #000000;
+  padding: 0.25rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=public.css.map */
