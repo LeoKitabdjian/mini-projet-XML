@@ -5,7 +5,7 @@
     <xsl:template match="/">
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
-                <title>Répartition du type de clients</title>
+                <title>Liste des séjours</title>
                 <link rel="stylesheet" type="text/css" href="../../style/sejours.css"/>
             </head>
             <body>
