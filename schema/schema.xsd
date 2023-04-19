@@ -35,6 +35,7 @@
         <xs:restriction base="xs:string">
             <xs:enumeration value="immersion_en_famille"/>
             <xs:enumeration value="stage_linguistique"/>
+            <xs:enumeration value="colonie_de_vacances"/>
         </xs:restriction>
     </xs:simpleType>
 
@@ -60,12 +61,12 @@
                                 <xs:complexType>
                                     <xs:simpleContent>
                                         <xs:extension base="xs:string">
-                                            <xs:attribute type="xs:byte" name="id" use="optional"/>
-                                            <xs:attribute type="xs:string" name="nom" use="optional"/>
-                                            <xs:attribute type="xs:string" name="prenom" use="optional"/>
-                                            <xs:attribute type="email" name="email" use="optional"/>
-                                            <xs:attribute type="telephone" name="telephone" use="optional"/>
-                                            <xs:attribute type="typePublic" name="typePublic" use="optional"/>
+                                            <xs:attribute type="xs:byte" name="id" use="required"/>
+                                            <xs:attribute type="xs:string" name="nom" use="required"/>
+                                            <xs:attribute type="xs:string" name="prenom" use="required"/>
+                                            <xs:attribute type="email" name="email" use="required"/>
+                                            <xs:attribute type="telephone" name="telephone" use="required"/>
+                                            <xs:attribute type="typePublic" name="typePublic" use="required"/>
                                         </xs:extension>
                                     </xs:simpleContent>
                                 </xs:complexType>
@@ -80,11 +81,11 @@
                                 <xs:complexType>
                                     <xs:simpleContent>
                                         <xs:extension base="xs:string">
-                                            <xs:attribute type="xs:byte" name="id" use="optional"/>
-                                            <xs:attribute type="xs:string" name="nom" use="optional"/>
-                                            <xs:attribute type="xs:string" name="prenom" use="optional"/>
-                                            <xs:attribute type="email" name="email" use="optional"/>
-                                            <xs:attribute type="telephone" name="telephone" use="optional"/>
+                                            <xs:attribute type="xs:byte" name="id" use="required"/>
+                                            <xs:attribute type="xs:string" name="nom" use="required"/>
+                                            <xs:attribute type="xs:string" name="prenom" use="required"/>
+                                            <xs:attribute type="email" name="email" use="required"/>
+                                            <xs:attribute type="telephone" name="telephone" use="required"/>
                                         </xs:extension>
                                     </xs:simpleContent>
                                 </xs:complexType>
@@ -100,11 +101,11 @@
                                     <xs:sequence>
                                         <xs:element type="xs:string" name="langue" maxOccurs="unbounded" minOccurs="0"/>
                                     </xs:sequence>
-                                    <xs:attribute type="xs:byte" name="id" use="optional"/>
-                                    <xs:attribute type="xs:string" name="nom" use="optional"/>
-                                    <xs:attribute type="xs:string" name="prenom" use="optional"/>
-                                    <xs:attribute type="email" name="email" use="optional"/>
-                                    <xs:attribute type="telephone" name="telephone" use="optional"/>
+                                    <xs:attribute type="xs:byte" name="id" use="required"/>
+                                    <xs:attribute type="xs:string" name="nom" use="required"/>
+                                    <xs:attribute type="xs:string" name="prenom" use="required"/>
+                                    <xs:attribute type="email" name="email" use="required"/>
+                                    <xs:attribute type="telephone" name="telephone" use="required"/>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -118,7 +119,7 @@
                                     <xs:sequence>
                                         <xs:element type="typePublic" name="typePublic" maxOccurs="unbounded" minOccurs="0"/>
                                         <xs:element type="xs:string" name="langue" maxOccurs="unbounded" minOccurs="0"/>
-                                        <xs:element name="accompagnateur" minOccurs="0">
+                                        <xs:element name="accompagnateur" maxOccurs="unbounded" minOccurs="0">
                                             <xs:complexType>
                                                 <xs:simpleContent>
                                                     <xs:extension base="xs:string">
@@ -127,7 +128,7 @@
                                                 </xs:simpleContent>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="enseignant" minOccurs="0">
+                                        <xs:element name="enseignant" maxOccurs="unbounded" minOccurs="0">
                                             <xs:complexType>
                                                 <xs:simpleContent>
                                                     <xs:extension base="xs:string">
@@ -140,9 +141,9 @@
                                             <xs:complexType>
                                                 <xs:simpleContent>
                                                     <xs:extension base="xs:string">
-                                                        <xs:attribute type="xs:string" name="description" use="optional"/>
-                                                        <xs:attribute type="typeActivite" name="typeActivite" use="optional"/>
-                                                        <xs:attribute type="xs:float" name="prix" use="optional"/>
+                                                        <xs:attribute type="xs:string" name="description" use="required"/>
+                                                        <xs:attribute type="typeActivite" name="typeActivite" use="required"/>
+                                                        <xs:attribute type="xs:float" name="prix" use="required"/>
                                                     </xs:extension>
                                                 </xs:simpleContent>
                                             </xs:complexType>
@@ -151,22 +152,22 @@
                                             <xs:complexType>
                                                 <xs:simpleContent>
                                                     <xs:extension base="xs:string">
-                                                        <xs:attribute type="xs:string" name="nom" use="optional"/>
-                                                        <xs:attribute type="niveau" name="niveau" use="optional"/>
-                                                        <xs:attribute type="xs:string" name="langue" use="optional"/>
-                                                        <xs:attribute type="test" name="test" use="optional"/>
+                                                        <xs:attribute type="xs:string" name="nom" use="required"/>
+                                                        <xs:attribute type="niveau" name="niveau" use="required"/>
+                                                        <xs:attribute type="xs:string" name="langue" use="required"/>
+                                                        <xs:attribute type="test" name="test" use="required"/>
                                                     </xs:extension>
                                                 </xs:simpleContent>
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
-                                    <xs:attribute type="xs:byte" name="id" use="optional"/>
-                                    <xs:attribute type="typeSejour" name="typeSejour" use="optional"/>
-                                    <xs:attribute type="xs:string" name="destination" use="optional"/>
-                                    <xs:attribute type="xs:byte" name="nbPlaces" use="optional"/>
-                                    <xs:attribute type="xs:date" name="dateDebut" use="optional"/>
-                                    <xs:attribute type="xs:date" name="dateFin" use="optional"/>
-                                    <xs:attribute type="xs:float" name="prix" use="optional"/>
+                                    <xs:attribute type="xs:byte" name="id" use="required"/>
+                                    <xs:attribute type="typeSejour" name="typeSejour" use="required"/>
+                                    <xs:attribute type="xs:string" name="destination" use="required"/>
+                                    <xs:attribute type="xs:byte" name="nbPlaces" use="required"/>
+                                    <xs:attribute type="xs:date" name="dateDebut" use="required"/>
+                                    <xs:attribute type="xs:date" name="dateFin" use="required"/>
+                                    <xs:attribute type="xs:float" name="prix" use="required"/>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>

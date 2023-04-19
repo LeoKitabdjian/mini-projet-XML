@@ -24,7 +24,7 @@
         </enseignant>
     </enseignants>
     <sejours>
-        <sejour id="1" typeSejour="stage_linguistique" destination="Angleterre" nbPlaces="8" dateDebut="2023-05-15" dateFin="2023-06-01" prix="500.0">
+        <sejour id="1" typeSejour="immersion_en_famille" destination="Angleterre" nbPlaces="8" dateDebut="2023-05-15" dateFin="2023-06-01" prix="500.0">
             <typePublic>adulte</typePublic>
             <typePublic>famille</typePublic>
             <langue>anglais</langue>
@@ -34,12 +34,21 @@
             <activite description="Visite de la ville" typeActivite="CULTURE" prix="25.0"/>
             <activite description="Visite du musée de Londre" typeActivite="CULTURE" prix="10.0"/>
         </sejour>
-        <sejour id="2" typeSejour="immersion_en_famille" destination="Angleterre" nbPlaces="4" dateDebut="2023-08-25" dateFin="2023-12-20" prix="800.0">
+        <sejour id="2" typeSejour="stage_linguistique" destination="Angleterre" nbPlaces="4" dateDebut="2023-08-25" dateFin="2023-12-20" prix="800.0">
             <typePublic>enfant_adolescent</typePublic>
             <langue>anglais</langue>
             <cours nom="Cours d'anglais A2 - B1" niveau="INTERMEDIAIRE" langue="anglais" test="PAS DE TEST"/>
             <cours nom="Cours d'anglais A1" niveau="DEBUTANT" langue="anglais" test="PAS DE TEST"/>
-            <cours nom="Cours d'espagnol B2 - C1" niveau="AVANCE" langue="anglais" test="PAS DE TEST"/>
+            <cours nom="Cours d'espagnol B2 - C1" niveau="AVANCE" langue="anglais" test="TEST"/>
+        </sejour>
+        <sejour id="3" typeSejour="colonie_de_vacances" destination="Italie" nbPlaces="10" dateDebut="2023-07-13" dateFin="2023-07-20" prix="100.0">
+            <typePublic>enfant_adolescent</typePublic>
+            <langue>italien</langue>
+            <accompagnateur id="1"/>
+            <accompagnateur id="2"/>
+            <enseignant id="2"/>
+            <activite description="Visite de la ville" typeActivite="CULTURE" prix="20.0"/>
+            <activite description="Visite de la galerie des Offices" typeActivite="CULTURE" prix="25.0"/>
         </sejour>
     </sejours>
 </organisme>
