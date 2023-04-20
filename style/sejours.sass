@@ -1,0 +1,100 @@
+@import "global"
+
+body
+  main
+    max-width: 1350px
+
+    section
+      h1
+        text-align: center
+
+      .articles
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        gap: 3%
+
+        article
+          display: flex
+          flex-direction: column
+          gap: 2.5rem
+          flex: 0 calc(calc(100% / 3) - 3%)
+
+          h2
+            font-size: 1.5rem
+            padding: 0
+            margin: 0
+            text-transform: uppercase
+            font-weight: 500
+            text-align: center
+            letter-spacing: 0.1rem
+            user-select: none
+
+          & > ul
+            transition: all 0.2s ease-in-out
+            background: rgba(255, 255, 255, 0.1)
+            padding: 1rem
+            border-radius: 1rem
+            margin: 0
+            display: flex
+            gap: 0.5rem
+            flex-direction: column
+
+            &:hover
+              transform: scale(1.05) translateY(-0.5rem)
+
+            & > li
+              list-style: none
+
+              & > ul
+                margin-top: 0.5rem
+                display: flex
+                flex-direction: column
+                gap: 0.5rem
+                padding: 0.5rem
+                background: rgba(255, 255, 255, 0.1)
+                border-radius: 6px
+
+                & > li
+                  list-style: none
+
+                  & > ul
+                    background: rgba(255, 255, 255, 0.1)
+                    padding: 0.5rem
+                    border-radius: 6px
+                    gap: 0.5rem
+
+                    & > li
+                      list-style: none
+                      display: flex
+                      gap: 0.5rem
+                      align-items: center
+
+                      & > ul
+                        display: flex
+                        gap: 0.5rem
+                        flex-direction: column
+
+                        & > li
+                          list-style: none
+                          text-transform: uppercase
+                          display: flex
+                          text-align: center
+
+                          &::before
+                            content: "•"
+                            color: white
+                            font-size: 1.5rem
+                            font-weight: 500
+                            line-height: 0
+                            margin-right: 0.5rem
+                            display: flex
+                            align-items: center
+
+                      span
+                        user-select: none
+
+          img
+            width: 50px
+            aspect-ratio: 1/1
+            object-fit: cover

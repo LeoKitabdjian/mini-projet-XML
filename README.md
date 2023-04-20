@@ -16,7 +16,6 @@
 3. [Scénario avec une nouvelle structure XML](#scénario-avec-une-nouvelle-structure-xml)
 4. [Scénario avec une nouvelle structure JSON](#scénario-avec-une-nouvelle-structure-json)
 
-
 ## Schéma XML
 
 Le schéma XML est disponible dans le fichier [`/schema/schema.xsd`](/schema/schema.xsd).

@@ -2,7 +2,7 @@
   <sejours>
     <sejour>
       <id>1</id>
-      <typeSejour>stage_linguistique</typeSejour>
+      <typeSejour>immersion_en_famille</typeSejour>
       <destination>Angleterre</destination>
       <nbPlaces>8</nbPlaces>
       <dateDebut>2023-05-15</dateDebut>
@@ -11,12 +11,30 @@
     </sejour>
     <sejour>
       <id>2</id>
-      <typeSejour>immersion_en_famille</typeSejour>
+      <typeSejour>stage_linguistique</typeSejour>
       <destination>Angleterre</destination>
       <nbPlaces>4</nbPlaces>
       <dateDebut>2023-08-25</dateDebut>
       <dateFin>2023-12-20</dateFin>
       <prix>800.0</prix>
+    </sejour>
+    <sejour>
+      <id>3</id>
+      <typeSejour>colonie_de_vacances</typeSejour>
+      <destination>Italie</destination>
+      <nbPlaces>10</nbPlaces>
+      <dateDebut>2023-07-13</dateDebut>
+      <dateFin>2023-07-20</dateFin>
+      <prix>100.0</prix>
+    </sejour>
+    <sejour>
+      <id>4</id>
+      <typeSejour>immersion_en_famille</typeSejour>
+      <destination>Italie</destination>
+      <nbPlaces>2</nbPlaces>
+      <dateDebut>2023-08-15</dateDebut>
+      <dateFin>2023-08-20</dateFin>
+      <prix>150.0</prix>
     </sejour>
   </sejours>
   <clients>

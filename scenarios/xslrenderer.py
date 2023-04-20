@@ -31,6 +31,5 @@ def render(xls_file):
     output = transformer(xml)
 
     if xls_file.endswith('json.xsl'):
-
         return json.dumps(json.loads(str(output)), indent=4, sort_keys=True)
     return etree.tostring(output, pretty_print=True)
