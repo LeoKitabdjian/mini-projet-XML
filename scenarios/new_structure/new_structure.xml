@@ -36,6 +36,15 @@
       <dateFin>2023-08-20</dateFin>
       <prix>150.0</prix>
     </sejour>
+    <sejour>
+      <id>5</id>
+      <typeSejour>stage_linguistique</typeSejour>
+      <destination>Espagne</destination>
+      <nbPlaces>6</nbPlaces>
+      <dateDebut>2024-01-07</dateDebut>
+      <dateFin>2024-03-18</dateFin>
+      <prix>650.0</prix>
+    </sejour>
   </sejours>
   <clients>
     <client>

@@ -2,7 +2,33 @@
 
 body
   main
+    max-width: 1350px
+
     section
+      display: flex
+      flex-direction: row
+      gap: 5%
+      flex-wrap: wrap
+
+      article
+        flex: 1 1 47.5%
+        margin-top: 2.5rem
+        display: flex
+        flex-direction: column
+        gap: 2.5rem
+        background: rgba(255, 255, 255, 0.1)
+        padding: 1rem
+        border-radius: 1rem
+        justify-content: space-between
+
+        h2
+          font-size: 1.5rem
+          padding: 0
+          margin: 0
+          text-transform: uppercase
+          font-weight: 500
+          letter-spacing: 0.1rem
+          user-select: none
 
       ul
         margin: 0
@@ -12,7 +38,7 @@ body
         gap: 1rem
 
         li
-          font-size: 1.5rem
+          font-size: 1rem
           list-style: unset
           display: flex
           justify-content: space-between
