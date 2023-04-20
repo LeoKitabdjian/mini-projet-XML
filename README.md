@@ -3,8 +3,6 @@
 * [Thomas Farineau](https://github.com/ThomasFarineau)
 * [Léo Kitabdjian](https://github.com/LeoKitabdjian)
 
-*Pour le transformer en PDF: https://md2pdf.netlify.app/*
-
 ## Table des matières
 1. [Schéma XML](#schéma-xml)
    * [Avantages de notre modélisation](#avantages-de-notre-modélisation)
@@ -21,7 +19,7 @@
 
 ## Schéma XML
 
-Le schéma XML est disponible dans le fichier [`/schema/schema.xsd`](/schema/schema.xsd).
+Le schéma XML est disponible dans le fichier [`/schema/schema.xsd`](https://github.com/LeoKitabdjian/mini-projet-XML/tree/main/schema/schema.xsd).
 
 Le schéma XML décrit la structure de notre organisme proposant des séjours linguistiques. Le schéma définit plusieurs types simples et un élément principal, "organisme", qui contient des éléments enfants pour décrire les clients, les accompagnateurs, les enseignants et les séjours.
 
@@ -68,50 +66,50 @@ Notre modélisation présente des avantages en termes de structuration et de val
 
 **Intérêt** : Ce scénario permet de connaître un grand nombre de statistiques sur les clients, enseignants et séjours, permettant de donner une vue d'ensemble plus complète et chiffrée aux administrateurs de l'organisme.
 
-**Entrée** : [`/scenarios/statistiques/statistiques.xsl`](/scenarios/statistiques/statistiques.xsl)
+**Entrée** : [`/scenarios/statistiques/statistiques.xsl`](https://github.com/LeoKitabdjian/mini-projet-XML/tree/main/scenarios/statistiques/statistiques.xsl)
 
-**Sortie** : [`/scenarios/statistiques/statistiques.html`](/scenarios/statistiques/statistiques.html)
+**Sortie** : [`/scenarios/statistiques/statistiques.html`](https://github.com/LeoKitabdjian/mini-projet-XML/tree/main/scenarios/statistiques/statistiques.html)
 
-**CSS Associé** : [`/style/public.css`](/style/public.css)
+**CSS Associé** : [`/style/public.css`](https://github.com/LeoKitabdjian/mini-projet-XML/tree/main/style/public.css)
 
 ### Scénario 2
 **Description** : Afficher les séjours détaillés.
 
 **Intérêt** : Ce scénario permet de donner une vue d'ensemble claire et détaillée sur l'ensemble des séjours proposés. Ces derniers sont classés par type et regroupent toutes les informations les concernant. Ainsi un personnel de l'organisme peut accéder aisément aux informations détaillées des séjours.
 
-**Entrée** : [`/scenarios/sejours/sejours.xsl`](/scenarios/sejours/sejours.xsl)
+**Entrée** : [`/scenarios/sejours/sejours.xsl`](https://github.com/LeoKitabdjian/mini-projet-XML/tree/main/scenarios/sejours/sejours.xsl)
 
-**Sortie** : [`/scenarios/sejours/sejours.html`](/scenarios/sejours/sejours.html)
+**Sortie** : [`/scenarios/sejours/sejours.html`](https://github.com/LeoKitabdjian/mini-projet-XML/tree/main/scenarios/sejours/sejours.html)
 
-**CSS Associé** : [`/style/sejours.css`](/style/sejours.css)
+**CSS Associé** : [`/style/sejours.css`](https://github.com/LeoKitabdjian/mini-projet-XML/tree/main/style/sejours.css)
 
 ### Scénario 3
 **Description** : Afficher les potentiels professeurs affectables aux séjours.
 
 **Intérêt** : Ce scénario permet d'afficher pour chaque séjour et pour chaque langue de ces séjours la liste des professeurs pouvant remplir ce rôle. De plus il indique si le professeur est déjà affecté à ce séjour ou non.
 
-**Entrée** : [`/scenarios/affectation/affectation.xsl`](/scenarios/affectation/affectation.xsl)
+**Entrée** : [`/scenarios/affectation/affectation.xsl`](https://github.com/LeoKitabdjian/mini-projet-XML/tree/main/scenarios/affectation/affectation.xsl)
 
-**Sortie** : [`/scenarios/affectation/affectation.html`](/scenarios/affectation/affectation.html)
+**Sortie** : [`/scenarios/affectation/affectation.html`](https://github.com/LeoKitabdjian/mini-projet-XML/tree/main/scenarios/affectation/affectation.html)
 
-**CSS Associé** : [`/style/affectation.css`](/style/affectation.css)
+**CSS Associé** : [`/style/affectation.css`](https://github.com/LeoKitabdjian/mini-projet-XML/tree/main/style/affectation.css)
 
 ## Scénario avec une nouvelle structure XML
 
 **Description** : Nous souhaitons extraire uniquement les informations sur les séjours linguistiques, les clients et les enseignants. Ce scénario permet de structurer les données différemment pour les intégrer dans un autre système (scolaire pour suivre notre idée).
 
-**Entrée** : [`/scenarios/new_structure/new_structure.xsl`](/scenarios/new_structure/new_structure.xsl)
+**Entrée** : [`/scenarios/new_structure/new_structure.xsl`](https://github.com/LeoKitabdjian/mini-projet-XML/tree/main/scenarios/new_structure/new_structure.xsl)
 
-**Sortie** : [`/scenarios/new_structure/new_structure.xml`](/scenarios/new_structure/new_structure.xml)
+**Sortie** : [`/scenarios/new_structure/new_structure.xml`](https://github.com/LeoKitabdjian/mini-projet-XML/tree/main/scenarios/new_structure/new_structure.xml)
 
 ## Scénario avec une nouvelle structure JSON
 **Description** : Nous souhaitons extraire uniquement les informations sur les clients et les accompagnateurs pour une application mobile qui permet de visualiser la liste des participants aux séjours linguistiques et leurs informations de contact.
 
 **Problème rencontré** : La bibliothèque lxml ne prend pas encore en charge la version XSLT 3.0. Par conséquent, nous avons dû modifier notre approche et trouver une solution pour utiliser une version compatible avec lxml afin que notre code Python puisse générer le fichier JSON.
 
-**Entrée** : [`/scenarios/json/json.xsl`](/scenarios/json/json.xsl)
+**Entrée** : [`/scenarios/json/json.xsl`](https://github.com/LeoKitabdjian/mini-projet-XML/tree/main/scenarios/json/json.xsl)
 
-**Sortie** : [`/scenarios/json/json.json`](/scenarios/json/json.json)
+**Sortie** : [`/scenarios/json/json.json`](https://github.com/LeoKitabdjian/mini-projet-XML/tree/main/scenarios/json/json.json)
 
 # Outil python de compilation XSL et de serveur web
 
@@ -136,8 +134,9 @@ py app.py
  ```
 
 Un serveur web s’ouvre sur le port 8000 et 3 url sont accessibles :
+
 * http://localhost:8000/statistiques
 * http://localhost:8000/sejours
 * http://localhost:8000/affectation
 
-Ici chaque fichier est généré à partir d’un fichier XSLT et d’un fichier XML de manière dynamique a chaque rechargement de la page.
+Ici chaque fichier est généré à partir d’un fichier XSLT et d’un fichier XML de manière dynamique à chaque rechargement de la page.
