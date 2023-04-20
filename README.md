@@ -15,6 +15,9 @@
    * [Scénario 3](#scénario-3)
 3. [Scénario avec une nouvelle structure XML](#scénario-avec-une-nouvelle-structure-xml)
 4. [Scénario avec une nouvelle structure JSON](#scénario-avec-une-nouvelle-structure-json)
+5. [Outil python de compilation XSL et de serveur web](#outil-python-de-compilation-xsl-et-de-serveur-web)
+   * [Installation](#installation)
+   * [Utilisation](#utilisation)
 
 ## Schéma XML
 
@@ -109,3 +112,32 @@ Notre modélisation présente des avantages en termes de structuration et de val
 **Entrée** : [`/scenarios/json/json.xsl`](/scenarios/json/json.xsl)
 
 **Sortie** : [`/scenarios/json/json.json`](/scenarios/json/json.json)
+
+# Outil python de compilation XSL et de serveur web
+
+## Installation
+
+### Prérequis
+
+* Python 3.6 ou supérieur
+* pip
+
+### Installation des dépendances
+
+Pour installer les dépendances, il suffit de lancer la commande suivante :
+
+```bash
+pip install -r requirements.txt
+ ```
+## Utilisation
+
+```bash
+py app.py
+ ```
+
+Un serveur web s’ouvre sur le port 8000 et 3 url sont accessibles :
+* http://localhost:8000/statistiques
+* http://localhost:8000/sejours
+* http://localhost:8000/affectation
+
+Ici chaque fichier est généré à partir d’un fichier XSLT et d’un fichier XML de manière dynamique a chaque rechargement de la page.

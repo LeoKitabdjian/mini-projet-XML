@@ -4,12 +4,25 @@ import urllib.parse
 from scenarios import xslrenderer
 
 
-def public(self):
+def statistiques(self):
     self.send_response(200)
     self.send_header("Content-type", "text/html")
     self.end_headers()
-    self.wfile.write(xslrenderer.render('scenarios/public/public.xsl'))
+    self.wfile.write(xslrenderer.render('scenarios/statistiques/statistiques.xsl'))
 
+
+def affectation(self):
+    self.send_response(200)
+    self.send_header("Content-type", "text/html")
+    self.end_headers()
+    self.wfile.write(xslrenderer.render('scenarios/affectation/affectation.xsl'))
+
+
+def sejours(self):
+    self.send_response(200)
+    self.send_header("Content-type", "text/html")
+    self.end_headers()
+    self.wfile.write(xslrenderer.render('scenarios/sejours/sejours.xsl'))
 
 def not_found(self):
     self.send_response(404)
@@ -32,8 +45,12 @@ def main(port=8000):
             parsed_path = urllib.parse.urlparse(self.path)
             if parsed_path.path.startswith('/style/'):
                 style(self, parsed_path)
-            elif parsed_path.path == '/public':
-                public(self)
+            elif parsed_path.path == '/statistiques':
+                statistiques(self)
+            elif parsed_path.path == '/sejours':
+                sejours(self)
+            elif parsed_path.path == '/affectation':
+                affectation(self)
             else:
                 not_found(self)
 
