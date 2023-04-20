@@ -25,7 +25,6 @@
     </enseignants>
     <sejours>
         <sejour id="1" typeSejour="immersion_en_famille" destination="Angleterre" nbPlaces="8" dateDebut="2023-05-15" dateFin="2023-06-01" prix="500.0">
-            <typePublic>adulte</typePublic>
             <typePublic>famille</typePublic>
             <langue>anglais</langue>
             <langue>francais</langue>
@@ -35,6 +34,7 @@
             <activite description="Visite du musée de Londre" typeActivite="CULTURE" prix="10.0"/>
         </sejour>
         <sejour id="2" typeSejour="stage_linguistique" destination="Angleterre" nbPlaces="4" dateDebut="2023-08-25" dateFin="2023-12-20" prix="800.0">
+            <typePublic>adulte</typePublic>
             <typePublic>enfant_adolescent</typePublic>
             <langue>anglais</langue>
             <cours nom="Cours d'anglais A2 - B1" niveau="INTERMEDIAIRE" langue="anglais" test="PAS DE TEST"/>
@@ -51,12 +51,20 @@
             <activite description="Visite de la galerie des Offices" typeActivite="CULTURE" prix="25.0"/>
         </sejour>
         <sejour id="4" typeSejour="immersion_en_famille" destination="Italie" nbPlaces="2" dateDebut="2023-08-15" dateFin="2023-08-20" prix="150.0">
-            <typePublic>enfant_adolescent</typePublic>
+            <typePublic>famille</typePublic>
             <langue>italien</langue>
             <accompagnateur id="1"/>
             <enseignant id="2"/>
             <activite description="Visite de la ville" typeActivite="CULTURE" prix="20.0"/>
             <activite description="Visite de la galerie des Offices" typeActivite="CULTURE" prix="25.0"/>
+        </sejour>
+        <sejour id="5" typeSejour="stage_linguistique" destination="Espagne" nbPlaces="6" dateDebut="2024-01-07" dateFin="2024-03-18" prix="650.0">
+            <typePublic>adulte</typePublic>
+            <typePublic>enfant_adolescent</typePublic>
+            <langue>espagnol</langue>
+            <cours nom="Cours d'espagnol A2 - B1" niveau="INTERMEDIAIRE" langue="espagnol" test="TEST"/>
+            <cours nom="Cours d'espagnol A1" niveau="DEBUTANT" langue="espagnol" test="PAS DE TEST"/>
+            <cours nom="Cours d'espagnol B2 - C1" niveau="AVANCE" langue="espagnol" test="TEST"/>
         </sejour>
     </sejours>
 </organisme>
