@@ -31,6 +31,7 @@ Voici les types simples définis dans le schéma :
 5. `typeSejour` : un type pour représenter le type de séjour linguistique, avec deux valeurs possibles - immersion_en_famille et stage-linguistique.
 6. `telephone` : un type pour valider le format des numéros de téléphone.
 7. `email` : un type pour valider le format des adresses e-mail.
+8. `langue` : un type pour représenter les langues disponibles. (anglais, français, italien, espagnol, allemand)
 
 L’élément "organisme" est composé des éléments suivants :
 
@@ -60,18 +61,37 @@ Notre modélisation présente des avantages en termes de structuration et de val
 ## Scénarios implémentés avec XSLT
 
 ### Scénario 1
-**Description** : Afficher le nombre d’utilisateurs pour chaque type de public.
+**Description** : Afficher des statistiques sur l'organisme.
 
-**Intérêt** : Ce scénario permet de connaître le nombre d’utilisateurs pour chaque type de public, ce qui peut être utile pour déterminer le nombre de séjours à proposer pour chaque type de public.
+**Intérêt** : Ce scénario permet de connaître un grand nombre de statistiques sur les clients, enseignants et séjours, permettant de donner une vue d'ensemble plus complète et chiffrée aux administrateurs de l'organisme.
 
-**Entrée** : [`/scenarios/public/public.xsl`](/scenarios/public/public.xsl)
+**Entrée** : [`/scenarios/statistiques/statistiques.xsl`](/scenarios/statistiques/statistiques.xsl)
 
-**Sortie** : [`/scenarios/public/public.html`](/scenarios/public/public.html)
+**Sortie** : [`/scenarios/statistiques/statistiques.htm`](/scenarios/statistiques/statistiques.html)
 
 **CSS Associé** : [`/style/public.css`](/style/public.css)
 
 ### Scénario 2
+**Description** : Afficher les séjours détaillés.
+
+**Intérêt** : Ce scénario permet de donner une vue d'ensemble claire et détaillée sur l'ensemble des séjours proposés. Ces derniers sont classés par type et regroupent toutes les informations les concernant. Ainsi un personnel de l'organisme peut accéder aisément aux informations détaillées des séjours.
+
+**Entrée** : [`/scenarios/sejours/sejours.xsl`](/scenarios/sejours/sejours.xsl)
+
+**Sortie** : [`/scenarios/sejours/sejours.html`](/scenarios/sejours/sejours.html)
+
+**CSS Associé** : [`/style/sejours.css`](/style/sejours.css)
+
 ### Scénario 3
+**Description** : Afficher les potentiels professeurs affectables aux séjours.
+
+**Intérêt** : Ce scénario permet d'afficher pour chaque séjour et pour chaque langue de ces séjours la liste des professeurs pouvant remplir ce rôle. De plus il indique si le professeur est déjà affecté à ce séjour ou non.
+
+**Entrée** : [`/scenarios/affectation/affectation.xsl`](/scenarios/affectation/affectation.xsl)
+
+**Sortie** : [`/scenarios/affectation/affectation.html`](/scenarios/affectation/affectation.html)
+
+**CSS Associé** : [`/style/affectation.css`](/style/affectation.css)
 
 ## Scénario avec une nouvelle structure XML
 
