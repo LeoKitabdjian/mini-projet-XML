@@ -116,11 +116,18 @@
                             <xsl:for-each select="activite">
                                 <xsl:sort select="@prix"/>
                                 <li>
-                                    <xsl:value-of select="@description"/>
-                                    <br/>
-                                    <xsl:value-of select="@typeActivite"/>
-                                    <br/>
-                                    <xsl:value-of select="@prix"/>
+                                    <ul>
+                                        <li>
+                                            <xsl:value-of select="@description"/>
+                                        </li>
+                                        <li>
+                                            <xsl:value-of select="@typeActivite"/>
+                                        </li>
+                                        <li>
+                                            Prix:
+                                            <xsl:value-of select="@prix"/> €
+                                        </li>
+                                    </ul>
                                 </li>
                             </xsl:for-each>
                         </ul>
@@ -133,17 +140,23 @@
                             <xsl:for-each select="cours">
                                 <xsl:sort select="@nom"/>
                                 <li>
-                                    <xsl:value-of select="@nom"/>
-                                    <br/>
-                                    <xsl:value-of select="@niveau"/>
-                                    <!-- REDONDANT AVEC LE NOM
-                                        <br/>
-                                        <xsl:value-of select="@langue"/>
-                                    -->
-                                    <br/>
-                                    <xsl:if test="@test='TEST'">
-                                        <img src="./test.png" alt="test"/>
-                                    </xsl:if>
+                                    <ul>
+                                        <li>
+                                            <xsl:value-of select="@nom"/>
+                                        </li>
+                                        <li>
+                                            <xsl:value-of select="@niveau"/>
+                                        </li>
+                                        <!-- REDONDANT AVEC LE NOM
+
+                                            <li><xsl:value-of select="@langue"/></li>
+                                        -->
+                                        <xsl:if test="@test='TEST'">
+                                            <div class="test">
+                                                <span class="material-symbols-outlined">quiz</span>
+                                            </div>
+                                        </xsl:if>
+                                    </ul>
                                 </li>
                             </xsl:for-each>
                         </ul>
