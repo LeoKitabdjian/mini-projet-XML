@@ -60,6 +60,12 @@
                   <xsl:value-of select="count(organisme/enseignants/enseignant[langue = 'espagnol'])"/>
                 </span>
               </li>
+              <li>
+                <span>Allemand</span>
+                <span>
+                  <xsl:value-of select="count(organisme/enseignants/enseignant[langue = 'allemand'])"/>
+                </span>
+              </li>
             </ul>
           </section>
           <section>
@@ -87,6 +93,12 @@
                 <span>Espagnol</span>
                 <span>
                   <xsl:value-of select="count(organisme/sejours/sejour[langue = 'espagnol'])"/>
+                </span>
+              </li>
+              <li>
+                <span>Allemand</span>
+                <span>
+                  <xsl:value-of select="count(organisme/sejours/sejour[langue = 'allemand'])"/>
                 </span>
               </li>
             </ul>

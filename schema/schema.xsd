@@ -24,6 +24,16 @@
         </xs:restriction>
     </xs:simpleType>
 
+    <xs:simpleType name="langue">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="anglais"/>
+            <xs:enumeration value="francais"/>
+            <xs:enumeration value="italien"/>
+            <xs:enumeration value="espagnol"/>
+            <xs:enumeration value="allemand"/>
+        </xs:restriction>
+    </xs:simpleType>
+
     <xs:simpleType name="test">
         <xs:restriction base="xs:string">
             <xs:enumeration value="TEST"/>
@@ -99,7 +109,7 @@
                             <xs:element name="enseignant" maxOccurs="unbounded" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element type="xs:string" name="langue" maxOccurs="unbounded" minOccurs="0"/>
+                                        <xs:element type="langue" name="langue" maxOccurs="unbounded" minOccurs="0"/>
                                     </xs:sequence>
                                     <xs:attribute type="xs:byte" name="id" use="required"/>
                                     <xs:attribute type="xs:string" name="nom" use="required"/>
@@ -118,7 +128,7 @@
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element type="typePublic" name="typePublic" maxOccurs="unbounded" minOccurs="0"/>
-                                        <xs:element type="xs:string" name="langue" maxOccurs="unbounded" minOccurs="0"/>
+                                        <xs:element type="langue" name="langue" maxOccurs="unbounded" minOccurs="0"/>
                                         <xs:element name="accompagnateur" maxOccurs="unbounded" minOccurs="0">
                                             <xs:complexType>
                                                 <xs:simpleContent>
@@ -154,7 +164,7 @@
                                                     <xs:extension base="xs:string">
                                                         <xs:attribute type="xs:string" name="nom" use="required"/>
                                                         <xs:attribute type="niveau" name="niveau" use="required"/>
-                                                        <xs:attribute type="xs:string" name="langue" use="required"/>
+                                                        <xs:attribute type="langue" name="langue" use="required"/>
                                                         <xs:attribute type="test" name="test" use="required"/>
                                                     </xs:extension>
                                                 </xs:simpleContent>
