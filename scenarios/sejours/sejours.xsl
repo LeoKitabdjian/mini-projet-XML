@@ -123,7 +123,14 @@
                                         <li>
                                             <small><i><xsl:value-of select="@typeActivite"/></i></small>
                                         </li>
-                                        <li> Prix: <xsl:value-of select="@prix"/> €</li>
+                                        <xsl:choose>
+                                            <xsl:when test="@prix &gt; 0.0">
+                                                <li> Prix: <xsl:value-of select="@prix"/> €</li>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <li> Prix: Gratuit</li>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
                                     </ul>
                                 </li>
                             </xsl:for-each>

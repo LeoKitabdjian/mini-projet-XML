@@ -49,6 +49,8 @@
             <enseignant id="2"/>
             <activite description="Visite de la ville" typeActivite="CULTURE" prix="20.0"/>
             <activite description="Visite de la galerie des Offices" typeActivite="CULTURE" prix="25.0"/>
+            <activite description="Match de foot inter-colonies" typeActivite="SPORT" prix="0.0"/>
+            <activite description="Parc d'attractions" typeActivite="LOISIR" prix="15.0"/>
         </sejour>
         <sejour id="4" typeSejour="immersion_en_famille" destination="Italie" nbPlaces="2" dateDebut="2023-08-15" dateFin="2023-08-20" prix="150.0">
             <typePublic>famille</typePublic>
