@@ -3,3 +3,58 @@
 body
   main
     max-width: 1350px
+
+    section
+      & > ul
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        gap: 1rem
+        margin: 0
+
+        & > li
+          flex: 1 1 calc(100% / 3 - 3%)
+          text-transform: uppercase
+
+          h2
+            font-size: 1.5rem
+            padding: 0
+            font-weight: 500
+            letter-spacing: 0.1rem
+            user-select: none
+            text-align: center
+            margin: 0 0 1.5rem
+
+          & > ul
+            display: flex
+            flex-direction: column
+            gap: 0.75rem
+            padding: 0
+            margin: 0
+
+            & > li + ul
+              display: flex
+              flex-direction: column
+              gap: 0.5rem
+
+              & > li
+                font-weight: 500
+                text-transform: none
+                &:after
+                  content: ' (non affecté)'
+                  color: white
+                  font-size: 0.75rem
+
+                &:has(> present)
+                  background: #039507
+                  &:after
+                    content: ' (présent)'
+
+                  present
+                    display: none
+
+        li
+          list-style: none
+          padding: 1rem
+          border-radius: 1rem
+          background: rgba(255, 255, 255, 0.1)

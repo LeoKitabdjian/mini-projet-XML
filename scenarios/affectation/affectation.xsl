@@ -16,7 +16,7 @@
                             <!-- Pour chaque séjour -->
                             <xsl:for-each select="organisme/sejours/sejour">
                                 <li>
-                                Séjour <xsl:value-of select="@id"/>
+                                <h2>Séjour <xsl:value-of select="@id"/></h2>
                                 <xsl:variable name="sejour"><xsl:value-of select="@id"/></xsl:variable>
                                 <ul>
                                     <!-- Pour chaque langue du séjour -->
