@@ -47,6 +47,9 @@ body main section h1 {
 body main {
   max-width: 1350px;
 }
+body main section {
+  gap: 1rem;
+}
 body main section h1 {
   text-align: center;
 }
@@ -61,6 +64,7 @@ body main section .articles article {
   flex-direction: column;
   gap: 2.5rem;
   flex: 1 1 30.3333333333%;
+  margin-top: 2.5rem;
 }
 body main section .articles article h2 {
   font-size: 1.5rem;
