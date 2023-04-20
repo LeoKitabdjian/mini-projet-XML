@@ -121,12 +121,9 @@
                                             <xsl:value-of select="@description"/>
                                         </li>
                                         <li>
-                                            <xsl:value-of select="@typeActivite"/>
+                                            <small><i><xsl:value-of select="@typeActivite"/></i></small>
                                         </li>
-                                        <li>
-                                            Prix:
-                                            <xsl:value-of select="@prix"/> €
-                                        </li>
+                                        <li> Prix: <xsl:value-of select="@prix"/> €</li>
                                     </ul>
                                 </li>
                             </xsl:for-each>
@@ -145,14 +142,14 @@
                                             <xsl:value-of select="@nom"/>
                                         </li>
                                         <li>
-                                            <xsl:value-of select="@niveau"/>
+                                            <small><i><xsl:value-of select="@niveau"/></i></small>
                                         </li>
                                         <!-- REDONDANT AVEC LE NOM
 
                                             <li><xsl:value-of select="@langue"/></li>
                                         -->
                                         <xsl:if test="@test='TEST'">
-                                            <div class="test">
+                                            <div class="test" title="Indique que ce cours dispose d'un test">
                                                 <span class="material-symbols-outlined">quiz</span>
                                             </div>
                                         </xsl:if>
