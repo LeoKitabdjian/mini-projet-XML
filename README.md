@@ -67,7 +67,7 @@ Notre modélisation présente des avantages en termes de structuration et de val
 
 **Entrée** : [`/scenarios/statistiques/statistiques.xsl`](/scenarios/statistiques/statistiques.xsl)
 
-**Sortie** : [`/scenarios/statistiques/statistiques.htm`](/scenarios/statistiques/statistiques.html)
+**Sortie** : [`/scenarios/statistiques/statistiques.html`](/scenarios/statistiques/statistiques.html)
 
 **CSS Associé** : [`/style/public.css`](/style/public.css)
 
